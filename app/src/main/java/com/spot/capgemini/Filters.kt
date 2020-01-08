@@ -10,4 +10,9 @@ fun main() {
         println("access: $it")
         it
     }
+    println("lazy: $lazyMap")
+    println("-----")
+    println("first: ${lazyMap.first()}")
+    println("-----")
+    println("all: ${lazyMap.toList()}")
 }
