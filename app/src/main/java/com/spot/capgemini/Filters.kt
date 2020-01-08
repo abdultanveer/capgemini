@@ -18,7 +18,8 @@ fun main() {
 
 
     var dirtyLevel = 20
-    val waterFilter: (Int) -> Int = { dirty -> dirty / 2 }
+    var nums = intArrayOf(2,3,4)
+    val waterFilter: (Int) -> Int = { dirty -> nums[1]}
     println(updateDirty(30, waterFilter))
 }
 
