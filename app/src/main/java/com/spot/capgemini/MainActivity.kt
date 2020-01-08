@@ -21,6 +21,10 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
        // binding.button.text = ""+name!!.length;
         binding.urName = myName
+        binding.apply {
+            myName?.nickname = editText.text.toString()
+            invalidateAll()
+        }
     }
 
     fun clickHandler(view: View) {
