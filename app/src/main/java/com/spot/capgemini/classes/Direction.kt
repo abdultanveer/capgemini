@@ -6,6 +6,6 @@ enum class Direction(val degrees: Int) {
 
 fun main() {
     println(Direction.EAST.name)
-    println(Direction.EAST.ordinal)
+    println(Direction.WEST.ordinal)
     println(Direction.EAST.degrees)
 }
